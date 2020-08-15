@@ -19,7 +19,7 @@
 
 - **I understand** that a student that **provides** code, enabling others to then represent it as their own, is **equally culpable** in the violation of Academic Integrity.
 
-- **I understand** that the instructor, in order to provide an honest, fair, and ethical class is **obligated** to find such violations.  This includes automating the process of extracting code, and packaging it for software comparison tools, including the Stanford **Measure Of Software Similarity** system, which accounts for the superficial differences named above in masking cheating.
+- **I understand** that the instructor, in order to provide an honest, fair, and ethical class is **obligated** to find such violations.  This includes automating the process of extracting code, and packaging it for software comparison tools, including the Stanford **Measure Of Software Similarity** system, which accounts for the superficial differences named above in attempts to mask cheating.
 
 - **I understand** that, other than the most trivial individual homework exercises, any two students code submissions will be substantially different, given the many many ways of solving the same problem, the different choices of functional decomposition, and, in the case of sophisticated modules (like `pandas`) the myriad of interface and tool options.
 

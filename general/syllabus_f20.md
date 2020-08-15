@@ -14,14 +14,15 @@
 **Email**            bressoud@denison.edu
 
 **Class Hours**      MWF: 10:20 a.m. to 11:10 a.m. <br>
-                     T: 8:30 a.m. to 9:20 a.m. <br>
+                     T: 8:40 a.m. to 9:30 a.m. <br>
+                     Burton Morgan 327 (Knobel Hall) <br>
                      [Zoom Class](https://denison.zoom.us/j/97356144099?pwd=SDhpTW9wNC9LNm51TkNOajBreG5hQT09)
 
 **Office Hours**     MWF: 8:30 a.m. to 9:20 a.m. <br>
                      TR: 2:50 p.m. to 3:40 p.m. <br>
                      [Zoom Office Hours](https://denison.zoom.us/j/98529089402?pwd=VGJmSjFqcUxCUXFaNGt2UExrLzNFUT09)
 
-**Final Exam**       after Thanksgiving; time TBD
+**Final Exam**       Wednesday, Dec. 2, 9:00-11:00 a.m. US ET
 
 **Course Page**      [https://notebowl.denison.edu](https://notebowl.denison.edu)
 

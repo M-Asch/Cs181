@@ -1,54 +1,17 @@
 # CS-181/DA-210 Setup
-
-## Installation of `Git`
-
-Git is the software that underlies GitHub as well as other systems of software that support controlled version control and distribution of collections of files.  We will be using Git and GitHub as our primary means of providing files/documents/notebooks to be used for class work and for homework.
-
-The software is a collection of command-line and system functions, and does not, by itself, provide a graphical interface.  We install it first so that subsequent steps have the software we need.
-
-### Windows Platform
-
-The `git` software for the windows platform can be obtained from
-
-https://gitforwindows.org/
-
-and contains both the underlying software, as well as a GUI for dealing with repositories and a version of a shell to give a more powerful command-line interface.
-
-Download the software and run the resultant download.  If you already use git repositories and/or have needs outside of this class for uploading new versions of files to GitHub, you may want to customize some of your responses during the install.  Otherwise, the defaults should be sufficient for the needs of the CS-181/DA-210 class.
-
-Once installed, you will see an entry in the Start Menu that contains shortcuts for launching the GUI, and for launching the shell, known as *Git Bash*.
-
-### Mac/Linux Platforms
-
-You can check if git is already installed by opening a Terminal window and using the command-line:
-```bash
-$ git --version
-```
-
-If the result is something like the following:
-```
-git version 2.21.0
-```
-then `git` is already installed.  If the version is recent, you need not modify your git installation.  If you get a response like `Command Not Found`, or if the git version is way out of date, you should install git.  You can also choose to install a GUI that helps use git, but a git GUI is beyond the scope of these instructions.
-
-Navigate to [https://git-scm.com/downloads](https://git-scm.com/downloads) and download the version of git, as appropriate for your OS X or Linux platform by clicking the name of your platform.  If needed, click the "start download manually" and proceeding through the download screen.  When the download is complete, open the downloaded file and follow the instructions.
-
-If you need to manage multiple repositories and to upload/push/commit changes, you should go to a command-line and set your git username.  This course will only be using a single student repository and you will not be updating the repository, so this step should not be necessary unless you have exceptional circumstances.  The command, if needed, is as follows:
-```bash
-$ git config --global user.name "J Doe"
-```
-
 ## Anaconda Install
 
 If you already have Anaconda installed on your computer, use the following instructions to upgrade, otherwise, skip ahead to the **New Installation** instructions below.
 
 ### Upgrade an Existing Install
 
-If you already have Anaconda installed, you should upgrade to the most recent version of the packages.  The easiest way to do this is to open a Terminal (MacOS and Linux) or Anaconda Powershell Prompt (Windows) command line window and enter the following
+If you already have Anaconda installed, you should upgrade to the most recent version of the packages that are compatible with Python 3.7.  The easiest way to do this is to open a Terminal (MacOS and Linux) or *Anaconda** Powershell Prompt (Windows) command line window. If you have trouble with the command-line on your particular platform, you can launch Ananconda-Navigator, then launch JupyterLab, click the left-hand "plus" symbol (or, from the menu, File->New Launcher), and then click on "Terminal".
 
+From the command-line, enter the following:
 ```bash
 $ conda update conda
-$ conda update python
+$ conda install python=3.7
+$ conda update ananconda
 $ conda update jupyterlab
 ```
 
@@ -64,8 +27,8 @@ $ conda list jupyterlab
 
 For me, this results in the following output:
 ```
-jupyterlab                1.1.4              pyhf63ae98_0  
-jupyterlab_server         1.0.6                      py_0  
+jupyterlab                2.1.5                      py_0  
+jupyterlab_server         1.2.0                      py_0  
 ```
 The version of a package is in the second column.
 
@@ -73,7 +36,7 @@ If you need to keep a current configuration and create a separate environment to
 
 ### New Installation of Anaconda
 
-Navigate to [https://www.anaconda.com/distribution](https://www.anaconda.com/distribution) and download the Python 3.7 based version appropriate to your platform.
+Navigate to [https://www.anaconda.com/distribution](https://www.anaconda.com/distribution) and download the version appropriate to your platform.
 
 When the download is complete, open the downloaded file to begin the installation.  
 
@@ -132,6 +95,45 @@ We will also need the following pip package, which is not part of the conda ecos
 
 `$ pip install ipython-sql`
 
+
+## Installation of `Git`
+
+Git is the software that underlies GitHub as well as other systems of software that support controlled version control and distribution of collections of files.  We will be using Git and GitHub as our primary means of providing files/documents/notebooks to be used for class work and for homework.
+
+The software is a collection of command-line and system functions, and does not, by itself, provide a graphical interface.  We install it first so that subsequent steps have the software we need.
+
+### Windows Platform
+
+The `git` software for the windows platform can be obtained from
+
+https://gitforwindows.org/
+
+and contains both the underlying software, as well as a GUI for dealing with repositories and a version of a shell to give a more powerful command-line interface.
+
+Download the software and run the resultant download.  If you already use git repositories and/or have needs outside of this class for uploading new versions of files to GitHub, you may want to customize some of your responses during the install.  Otherwise, the defaults should be sufficient for the needs of the CS-181/DA-210 class.
+
+Once installed, you will see an entry in the Start Menu that contains shortcuts for launching the GUI, and for launching the shell, known as *Git Bash*.
+
+### Mac/Linux Platforms
+
+You can check if git is already installed by opening a Terminal window and using the command-line:
+```bash
+$ git --version
+```
+
+If the result is something like the following:
+```
+git version 2.21.0
+```
+then `git` is already installed.  If the version is recent, you need not modify your git installation.  If you get a response like `Command Not Found`, or if the git version is way out of date, you should install git.  You can also choose to install a GUI that helps use git, but a git GUI is beyond the scope of these instructions.
+
+Navigate to [https://git-scm.com/downloads](https://git-scm.com/downloads) and download the version of git, as appropriate for your OS X or Linux platform by clicking the name of your platform.  If needed, click the "start download manually" and proceeding through the download screen.  When the download is complete, open the downloaded file and follow the instructions.
+
+If you need to manage multiple repositories and to upload/push/commit changes, you should go to a command-line and set your git username.  This course will only be using a single student repository and you will not be updating the repository, so this step should not be necessary unless you have exceptional circumstances.  The command, if needed, is as follows:
+```bash
+$ git config --global user.name "J Doe"
+```
+
 ## `GitHub`
 
 `GitHub` is  an organization that hosts project repositories and is used by professionals and students to collaborate and share files/software/documentation and using `Git` to allow coordination and version control for those activities.
@@ -145,7 +147,7 @@ Unless you have a justifiable reason not to, use your Denison email address.  Th
 
 You will have to establish that you are a human, not a robot, and to verify your email as part of the process of creating a GitHub identity.
 
-**Enter your github username with your instructor to get added to the cs181-s20-drb repository before proceeding to the next step.**
+**There will be a Bulletin post on Notebowl where you will respond in a comment, giving your GitHub userid.  Your professor will use this to invite you to the class repository, which will be how we distribute all homework assignments and documentation.**
 
 You will receive, by email, an invitation to the repository.  Follow the link and accept the invitation **before** you proceed to the next step.
 
@@ -188,12 +190,12 @@ Please, **do not** combine files from multiple classes into the same directory. 
 > Hint: To make the steps below easier, avoid spaces in the names of your directories, and avoid getting too complex an organization.
 
 
-### GitHub Clone of `denison-cs/cs181-s20-drb` repository
+### GitHub Clone of `denison-cs/cs181-f20` repository
 
-One of the primary means of delivering material to students in this class will be through a GitHub repository named `cs181-s20-drb`.  When one creates a local copy of the directories and files in a Git repository for the *first time*, this action is called a **clone**.  So our goal is to clone the repository and for the destination of the clone to be on your local computer within the cs181 folder you created above.  There are two prerequsite steps:
+One of the primary means of delivering material to students in this class will be through a GitHub repository named `cs181-f20`.  When one creates a local copy of the directories and files in a Git repository for the *first time*, this action is called a **clone**.  So our goal is to clone the repository and for the destination of the clone to be on your local computer within the cs181 folder you created above.  There are two prerequsite steps:
 
 1. Make sure you have registered and created your GitHub username.
-2. Give your GitHub username to your instructor, who owns the cs181-s20-drb repository and needs to add you as a valid user of the repository.  
+2. Give your GitHub username to your instructor, who owns the cs181-f20 repository and needs to add you as a valid user of the repository.  
 
    > The current plan is for the instructor to be on GitHub on the machine at the front of the classroom, and to have students ready for this step come up to the instructor machine and add their GitHub username on the repository.
 
@@ -217,15 +219,15 @@ Now you are ready to use `Git` to clone the repository from GitHub.
 
 3. Execute the following in your terminal:
    ```
-   $ git clone https://github.com/denison-cs/cs181-s20-drb.git
+   $ git clone https://github.com/denison-cs/cs181-f20.git
    ```
    This step can only succeed if the prerequisite steps have all been successful.
 
-   On successful execution, you will be asked for your GitHub username and password, and the system will report the Cloning and unpacking operations.  The end result will be a directory named `cs181-s20-drb` *within* your class folder.  You should navigate into this directory and get a sense of its organization.  Try doing the following in the terminal:
+   On successful execution, you will be asked for your GitHub username and password, and the system will report the Cloning and unpacking operations.  The end result will be a directory named `cs181-f20` *within* your class folder.  You should navigate into this directory and get a sense of its organization.  Try doing the following in the terminal:
    ```
-   $ cd cs181-s20-drb
+   $ cd cs181-f20
    $ ls
    ```
-   (The `ls` is the command to *list* the contents of the current directory.)  Does what you see make sense?  You should see entries for `99-general`, a directory for files like these setup instructions, as well as a folder named `homework`, which is where all the files needed for you to complete homework assignments will be kept.
+   (The `ls` is the command to *list* the contents of the current directory.)  Does what you see make sense?  You should see entries for `general`, a directory for files like these setup instructions, as well as a folder named `homework`, which is where all the files needed for you to complete homework assignments will be kept.
 
 <sup>1</sup> The terms **directories** and **folders** refer to the same thing, a location in the file system on a computer in which we can organize both **files** as well as other (sub)directories in a hierarchical fashion.  Those who work in the **systems** subfield of computer science use the term directory, while many users, based on their experience in the GUI metaphor of a desktop, use the term folder.
