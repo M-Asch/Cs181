@@ -11,7 +11,7 @@
 
 Day        | Reading      | Reading Questions
 :--------- |:-------------|:----------------------------------
-Monday     | Chapter 3; reinforce 3.1, 3.2, 3.4.1, 3.4.2 |
+Monday     | Chapter 3; reinforce 3.1, 3.2, 3.4.1, 3.4.2 | 3.102, 3.104
 Tuesday    | - |
 Wednesday  | Chapter 3, 3.4.3, 3.3 |
 Friday     | Chapter 5 |
